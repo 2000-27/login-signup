@@ -3,10 +3,11 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_marshmallow import Marshmallow
 from flask_login import UserMixin
 from werkzeug.security import generate_password_hash, check_password_hash
-import jwt
-import os
+
 from datetime import datetime,timedelta
 import re
+import os
+import  jwt
 
 app = Flask(__name__)
 basedir = os.path.abspath(os.path.dirname(__file__))
